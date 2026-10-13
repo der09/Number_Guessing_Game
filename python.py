@@ -14,7 +14,7 @@ previous_guesses = []
 # user can only guess 5 times 
 guess = 5 
 
-
+# function to add a guess if it qualifies 
 def add_guess(user_guess, previous_guesses): 
 
     # gives invalid input if guess is out of range or dupes 
@@ -32,7 +32,7 @@ def add_guess(user_guess, previous_guesses):
     # returns valid guess  
     return user_guess
 
-
+# when there are still guesses avaliable 
 while guess > 0: 
     user_guess = int(input("Enter a number between 1 - 10: "))
     user_guess = add_guess(user_guess, previous_guesses)
